@@ -1,5 +1,8 @@
 import streamlit as st
-from PIL import Image, ImageDraw, ImageFont
+try:
+    from moviepy.editor import ImageSequenceClip
+except:
+    from moviepy import ImageSequenceClip
 import textwrap
 import numpy as np
 import io
